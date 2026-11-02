@@ -1,0 +1,389 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f1e8;
+    color: #49382d;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #eee3d3;
+    padding: 20px 8%;
+    border-bottom: 1px solid #ddcbb6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #79543d;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #49382d;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a87953;
+}
+
+/* HOME SECTION */
+
+.hero {
+    min-height: 570px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome,
+.section-label {
+    color: #a87953;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #a87953;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.intro {
+    color: #766356;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background-color: #79543d;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a87953;
+}
+
+/* PROFILE CARD */
+
+.hero-card {
+    background-color: #eee3d3;
+    padding: 40px 30px;
+    width: 290px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(80, 55, 35, 0.12);
+}
+
+.profile-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #79543d;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.hero-card h2 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.hero-card p {
+    color: #766356;
+    font-size: 14px;
+}
+
+.small-line {
+    width: 50px;
+    height: 2px;
+    background-color: #a87953;
+    margin: 18px auto;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: #eee3d3;
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about > p:not(.section-label) {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #766356;
+}
+
+.about-details {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.about-details div {
+    background-color: #f7f1e8;
+    padding: 25px;
+    border-radius: 10px;
+    width: 230px;
+}
+
+.about-details h3 {
+    color: #79543d;
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #49382d;
+    color: #f7f1e8;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #e6c6a5;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .about {
+        padding: 55px 6%;
+    }
+}
+
+/* RESUME PAGE */
+
+.resume-header {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #eee3d3;
+}
+
+.resume-header h1 {
+    font-size: 40px;
+    color: #79543d;
+}
+
+.resume-header > p:last-child {
+    color: #766356;
+}
+
+.resume-container {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+.resume-section {
+    background-color: #eee3d3;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(80, 55, 35, 0.06);
+}
+
+.resume-section h2 {
+    color: #79543d;
+    border-bottom: 2px solid #c5a486;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.resume-section h3 {
+    color: #49382d;
+    margin-bottom: 8px;
+}
+
+.resume-section p {
+    color: #766356;
+    margin-bottom: 10px;
+}
+
+.resume-card {
+    background-color: #f7f1e8;
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 4px solid #a87953;
+}
+
+.project-subtitle {
+    font-weight: bold;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background-color: #79543d;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.strength-list {
+    padding-left: 25px;
+    color: #766356;
+}
+
+.strength-list li {
+    margin-bottom: 10px;
+}
+
+.resume-section a {
+    color: #79543d;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        margin: 25px auto;
+    }
+
+    .resume-header h1 {
+        font-size: 32px;
+    }
+}
+
+/* CONTACT PAGE */
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contactForm label {
+    color: #79543d;
+    font-weight: 600;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 13px;
+    border: 1px solid #c5a486;
+    border-radius: 7px;
+    background: #f7f1e8;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: 2px solid #a87953;
+}
+
+#contactForm button {
+    background: #79543d;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background: #5c3e2c;
+}
+
+#formStatus {
+    color: #79543d;
+    font-weight: bold;
+}
