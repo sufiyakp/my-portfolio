@@ -138,6 +138,13 @@ header {
     font-weight: bold;
     margin: 0 auto 20px;
 }
+.profile-circle img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
 
 .hero-card h2 {
     font-size: 19px;
